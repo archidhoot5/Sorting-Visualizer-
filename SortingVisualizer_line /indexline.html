@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <title>Sorting Visualizer</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Canvas for the line graph -->
+        <div id="array-container">
+            <canvas id="array-canvas"></canvas>
+            <h5 id="no-algo-warning" class="display-none text-danger">No Algorithm Selected!</h5>
+        </div>
+
+        <!-- Buttons for algorithms -->
+        <div id="algo-container">
+            <button class="algo-btn">Bubble Sort</button>
+            <button class="algo-btn">Selection Sort</button>
+            <button class="algo-btn">Insertion Sort</button>
+            <button class="algo-btn">Merge Sort</button>
+            <button class="algo-btn">Quicksort</button>
+            <button class="algo-btn">Heapsort</button>
+            <button id="sort">Sort</button>
+        </div>
+
+        <!-- Controls for randomization and sliders -->
+        <div id="change-container">
+            <button id="randomize">Randomize</button>
+            <div id="sliders">
+                <div class="slider-container">
+                    <label for="size-slider">Array Size</label>
+                    <input type="range" id="size-slider" class="slider" min="4" max="64" value="32" autocomplete="off">
+                </div>
+                <div class="slider-container">
+                    <label for="speed-slider">Speed</label>
+                    <input type="range" id="speed-slider" class="slider" min="1" max="4" value="3" autocomplete="off">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/scriptline.js"></script>
+    <script src="assets/bubble-sort.js"></script>
+    <script src="assets/selection-sort.js"></script>
+    <script src="assets/insertion-sort.js"></script>
+    <script src="assets/merge-sort.js"></script>
+    <script src="assets/quicksort.js"></script>
+    <script src="assets/heapsort.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    font-family: "Catamaran", sans-serif;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    height: 70px;
+
+}
+
+.container{
+    align-items: center;
+    margin-top: 30%;
+    padding: 3px;
+    color: black;
+    max-width: 800px;
+
+    
+}
+#algo-container center {
+    font-size: 40px;
+    font-weight: 600;
+    color: #e5d5d5;
+}
+
+#algo-container-btn{
+    display: block;
+    color:aliceblue;
+    padding: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 80px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+.btn-primary{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.algo-btn:hover {
+    opacity: 0.8;
+}
+
